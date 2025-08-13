@@ -1,0 +1,28 @@
+.hidden { display: none; }
+
+#studentsList .student-card {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#studentsList .student-name {
+  font-weight: 600;
+  cursor: pointer;
+}
+#studentsList .student-name:hover { text-decoration: underline; }
+
+.report-header {
+  display: flex; justify-content: space-between; align-items: center;
+}
+#closeReport {
+  border: none; padding: 6px 10px; border-radius: 6px; cursor: pointer;
+}
+
+.report-actions { display: flex; gap: 10px; margin-top: 10px; }
+
+/* small screens */
+@media (max-width: 480px) {
+  .subject-row { flex-direction: column; gap: 6px; }
+}
