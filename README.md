@@ -1,0 +1,2 @@
+# StudyTrackergpt
+school record
