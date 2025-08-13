@@ -1,0 +1,34 @@
+<h1>📚 Study Tracking Application</h1>
+
+<div class="form-container">
+  <h2>Enter Student Details</h2>
+  <form id="studentForm">
+    <label>Student Name:</label>
+    <input type="text" id="name" required>
+
+    <label>Grade Level:</label>
+    <input type="text" id="gradeLevel" required>
+
+    <label>Subjects & Marks:</label>
+    <!-- NOTE: no free-text Subject input here -->
+    <div id="subjectsContainer"></div>
+
+    <button type="button" id="addSubject">➕ Add Subject</button>
+    <button type="submit">Save Student</button>
+  </form>
+</div>
+
+<h2>Students</h2>
+<div id="studentsList"></div>
+
+<div id="reportCard" class="hidden">
+  <div class="report-header">
+    <h2>📄 Report Card</h2>
+    <button id="closeReport" title="Close">✖</button>
+  </div>
+  <div id="reportContent"></div>
+  <div class="report-actions">
+    <button onclick="printReport()">🖨 Print</button>
+    <button onclick="shareReport()">📤 Share</button>
+  </div>
+</div>
